@@ -1,0 +1,44 @@
+body{
+	font-family: font-family: "Times New Roman", Georgia, Serif;
+	font-color: #808080;
+	background-image: url("/assets/css/background.png"); 
+	background-color: #4C4C4C;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: absolute; 
+    background-size: 100%;
+    background-display: block;
+}
+
+p{
+	color: #808080;
+}
+
+h2{
+	text-decoration: underline;
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+nav{
+	font-size: 20px;
+	font-weight: bolder;
+
+}
+
+.navbar{
+	padding: 10px;
+    line-height: 0;
+    background-color: #4C4C4C;
+    box-shadow: 0px 5px 40px 0px #aaa;
+
+}
+.logo{
+	width: 190px;
+	height: 60px;
+	position: relative;
+	margin: 5px;
+
+}
+
+
+
