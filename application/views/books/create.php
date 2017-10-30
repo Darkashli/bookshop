@@ -1,10 +1,10 @@
-<h1><?= $title; ?></h1>
+<article>
+<h3><?= $title; ?></h3>
   <!-- form_validation have been created in cofig/$autoload['libraries'], second step will be in controller/posts/create -->
 
 <?php echo validation_errors(); ?>
 
 <?php echo form_open('books/create'); ?>
-
   <div class="form-group">
     <label>Author</label>
     <input type="text" class="form-control" name="author" placeholder="Add Name">
@@ -46,4 +46,6 @@
  	</select>
  </div>
   <button type="submit" class="btn btn-primary">create</button>
+</article>
 </form>
+

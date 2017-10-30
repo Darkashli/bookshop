@@ -1,5 +1,6 @@
-<h2><?= $title ?></h2>
+<article>
+<h3><?= $title ?></h3>
 <p>Welcome to the Aureus book store</p>
-<hr>
 <p>Maximize yourself</p>
+</article>
 

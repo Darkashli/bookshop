@@ -9,27 +9,28 @@
     
 	 public function index() {
 
-	 	$this->load->model('navModel', 'nav');
-		$data = $this->nav->getNav();
+	 	$this->load->model('navModel');
+		$data = $this->navModel->getNav();
 		$this->load->view('templates/header', array(
 			'navData' => $data 
 		));
 
 		$this->load->view('books/index', array(
-		'title' => 'Our books',
+		'title' => 'Bookstore',
 		'book' => $this->book_model->get_book()
 		));
 		$this->load->view('templates/footer');
 	}
 
    public function view($slug = NULL){
+
 		$books= $this->book_model->get_book($slug);
 		if (empty($books)) {
 		    show_404();
 		}
 		// Load navigation
-		$this->load->model('navModel', 'nav');
-		$data = $this->nav->getNav();
+		$this->load->model('navModel');
+		$data = $this->navModel->getNav();
 		$this->load->view('templates/header', array(
 			'navData' => $data 
 		));
@@ -51,8 +52,8 @@
         if ($this->form_validation->run() === FALSE) {
  
 			// Load navigation
-			$this->load->model('navModel', 'nav');
-			$data = $this->nav->getNav();
+			$this->load->model('navModel');
+			$data = $this->navModel->getNav();
 			$this->load->view('templates/header', array(
 				'navData' => $data 
 			));
@@ -81,8 +82,8 @@
 		    show_404();
 		}
 		// Load navigation
-		$this->load->model('navModel', 'nav');
-		$data = $this->nav->getNav();
+		$this->load->model('navModel');
+		$data = $this->navModel->getNav();
 		$this->load->view('templates/header', array(
 			'navData' => $data 
 		));

@@ -7,8 +7,8 @@
 		}
 
 		// Load navigation
-		$this->load->model('navModel', 'nav');
-		$data = $this->nav->getNav();
+		$this->load->model('navModel');
+		$data = $this->navModel->getNav();
 		$this->load->view('templates/header', array(
 			'navData' => $data 
 		));

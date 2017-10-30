@@ -1,4 +1,5 @@
-<h1><?= $title; ?></h1>
+<article>
+<h3><?= $title; ?></h3>
 
 <?php echo validation_errors(); ?>
 
@@ -32,3 +33,4 @@
 
   <button type="submit" class="btn btn-primary">edit</button>
 </form>
+</article>
